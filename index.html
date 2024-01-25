@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/todologo.png"/>
+    </div>
+        <h1>Todo List</h1>
+    </div>
+    <div class="box-container">
+      <div class="list-container">
+        <h2 class="list-title">Wake up</h2>
+        <h4 class="list-timing">6:00 AM</h4>
+        <p class="list-description">Wake up and start your daily work</p>
+        <button class="btn-delete" id="delete-btn" onclick="deleteBook(event)">Delete</button>
+      </div>
+    </div>
+
+
+    
+
+
+
+
+    <div class="popup-background"></div>
+    <div class="popup-box">
+      <h3 id="add-list-head">Add your daily todo</h3>
+      <form>
+        <input id="add-list-title" placeholder="Add Your Todo" />
+        <input id="add-list-timing" placeholder="Set time" />
+        <textarea
+          id="add-list-description"
+          placeholder="Add Description"
+        ></textarea>
+        <button id="btn-add-list">Add</button>
+        <button id="btn-cancel-list">Cancel</button>
+      </form>
+    </div>
+
+    
+      <button class="add-button" id="add-popup-button">+</button>
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
